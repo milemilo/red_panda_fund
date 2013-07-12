@@ -5,7 +5,7 @@ html {
 
 .donate {
   /*padding-left: 75px;*/
-  padding: 15px;
+  padding: 15px 15px 30px 15px;
   margin-top: 250px;
   margin-left: 100px;
   font-size: 2em;
@@ -19,7 +19,6 @@ html {
   /*font-family: Harabara;*/
   /*font-family: 'Bookman Old Style';*/
   font-weight: bold;
-  text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
   border-radius: 10px;
   background: -moz-linear-gradient(left, rgba(229,229,229,0.4) 0%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(229,229,229,0.4))); /* Chrome,Safari4+ */
@@ -34,7 +33,27 @@ html {
 }
 
 .donate p {
+  margin-top: 15px;
   text-align: center;
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
+
+}
+
+#text {
+  font-size: .5em;
+  text-align: center;
+}
+
+#adopt {
+  padding-top: 10px;
+  font-size: .5em;
+  text-align: center;
+}
+
+#adopt a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
 }
 
 #population {
@@ -76,7 +95,7 @@ th {
 
 #toggleOpen {
   position: fixed;
-  left: 38%;
+  left: 34%;
   /*top: 0;*/
   color: red;
   font-weight: bold;
@@ -98,7 +117,7 @@ nav {
   color: white;
   font-weight: bold;
   margin-left: 500px;
-     font: normal 3em "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+  font: normal 3em "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
 
 }
 
@@ -121,6 +140,12 @@ nav {
   background: -ms-linear-gradient(left, rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); /* IE10+ */
   background: linear-gradient(to right, rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 ); /* IE6-9 */
+  /*box-shadow:  7px 7px 5px rgba(50, 50, 50, 0.75);*/
+  /*text-shadow: 1px 1px 1px #000;
+  color:white;*/
+  text-shadow: 0px 1px 1px #4d4d4d;
+        color: #222;
+        font: .6em 'LeagueGothicRegular'
   
 }
 

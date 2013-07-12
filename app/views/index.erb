@@ -2,13 +2,15 @@
   <div class="header">
   </div>
   <div class="donate">
-    <p> Red Panda Relief</p>
+    <p> Red Panda Love</p>
 	
 	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_s-xclick">
       <input type="hidden" name="hosted_button_id" value="JA52ARW8PB5TU">
-      <input id='donate_button' type='submit' value='Donate'>
+      <input id='donate_button' type='submit' value='Make a Donation'>
+
     </form>
+    <div id="adopt"<span id="text"><a href="http://bit.ly/10RmS65" target="_blank"> Love Pandas? Adopt One Now!</a></span></div>
 
    <!--  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_s-xclick">
@@ -29,16 +31,16 @@
     
 
     <div id="toggleOpen">
-      <span id="donation-list"> who even likes red pandas? </span>
+      <span id="donation-list"> does anyone even like red pandas? </span>
     </div>
  
-    <div id="toggleClose">
+    <!-- <div id="toggleClose">
       <span> << close </span>
-    </div>
+    </div> -->
 
     <nav>
       <ul>
-      	 <h1> These People HEART Red Pandas </h1>
+      	 <h1> Yup! These People HEART Red Pandas </h1>
 
   	<% @donations.each do |user| %>
   	<li id="donation">$<%=user.donation %> -- <%= user.first_name %> <%= user.last_name %> - <%= user.location %></li>
