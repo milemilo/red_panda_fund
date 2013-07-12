@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="header">
+  </div>
+  <div class="donate">
+    <p> Red Panda Relief</p>
+	
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="JA52ARW8PB5TU">
+      <input id='donate_button' type='submit' value='Donate'>
+    </form>
+
+   <!--  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="JA52ARW8PB5TU">
+      <input id="donate_button" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form> -->
+ <!--    <nav>
+    	<ul>
+    		<li><a href="/donations">Donations</a></li>
+    	</ul>
+    </nav>
+ -->
+  </div>
+  <div id="footer">
+    <span class="total">$<% total = @donations.map {|user| user.donation } %>
+    <%= total.inject(:+) %> Donated</span>
+    
+
+    <div id="toggleOpen">
+      <span id="donation-list"> who even likes red pandas? </span>
+    </div>
+ 
+    <div id="toggleClose">
+      <span> << close </span>
+    </div>
+
+    <nav>
+      <ul>
+      	 <h1> These People HEART Red Pandas </h1>
+
+  	<% @donations.each do |user| %>
+  	<li id="donation">$<%=user.donation %> -- <%= user.first_name %> <%= user.last_name %> - <%= user.location %></li>
+  	<% end %>
+      </ul>
+      <br clear="all">
+    </nav>
+</div>

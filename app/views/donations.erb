@@ -1,0 +1,10 @@
+<h2> People Who HEART Red Pandas </h2>
+  <ul>
+  	<% @donations.each do |user| %>
+  	<li id="donation">$<%=user.donation %> -- <%= user.first_name %> <%= user.last_name %> - <%= user.location %></li>
+  	<% end %>
+  </ul>
+
+  <h1 id="total"> total </h1>
+  	<% total = @donations.map {|user| user.donation } %>
+  	<%= total.inject(:+) %>
